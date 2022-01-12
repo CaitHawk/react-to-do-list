@@ -1,0 +1,35 @@
+.listContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 62, 80);
+    height: 100vh;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    border: 7px solid rgb(129, 126, 126);
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    height: 50%;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.listTitle {
+    background-color: rgb(130, 167, 179);
+    width: 100%;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(56, 55, 55);
+    padding: 10px 0;
+}
+
+.ListItems {
+    padding: 20px;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import './formStyle.css'
 
 
 class ToDoForm extends Component {
@@ -23,15 +24,15 @@ class ToDoForm extends Component {
     }
     render() {
         return (
-            <form onSubmit={this.handleSubmit} className="NewTodoForm">
-                <label htmlFor='newItem'>New Todo:</label>
+            <form onSubmit={this.handleSubmit} className="newTaskForm">
+                {/* <label htmlFor='newItem'>New Todo:</label> */}
                 <input
                     type='text'
                     name='task'
                     value={this.state.task}
                     id='newItem'
                     onChange={this.handleChange}
-                    placeholder="New Task"
+                    placeholder="New Entry"
                 />
                 <button>Add</button>
             </form>

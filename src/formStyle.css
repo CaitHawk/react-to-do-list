@@ -1,0 +1,29 @@
+.newTaskForm {
+    width: 380px;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.newTaskForm button {
+    background-color: rgb(38, 131, 148);
+    padding: 5px 10px;
+    border-radius: 25px;
+    width: 80px;
+    border: none;
+    color: white;
+}
+
+.newTaskForm button:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.newTaskForm input {
+    width: 200px;
+    padding: 8px 5px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    border-radius: 3px;
+}

@@ -1,0 +1,48 @@
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.itemTask {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.trash, .edit {
+  margin: 5px;
+  color: rgb(88, 79, 79);
+}
+
+.itemTask li {
+  background-color: rgb(255, 255, 255);
+  width: 230px;
+  padding-left: 5px;
+}
+
+.editForm {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  margin-bottom: 10px;
+  margin-right: 25px;
+}
+
+.editForm input {
+  background-color: rgb(219, 219, 219);
+  width: 200px;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.editForm button {
+  background: rgb(105, 105, 105);
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 10px;
+  color: white;
+}
