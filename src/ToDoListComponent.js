@@ -61,7 +61,7 @@ class ToDoList extends Component {
         return (
             <div className="listContainer">
                 <div className="list">
-                    <h1 className="listTitle">Today:</h1>
+                    <h1 className="listTitle">My Tasks :</h1>
                     <div className="listItems">
                     <ToDoForm createNewTodo={this.createNewTodo} className="listForm" />
                     <ul>{list}</ul>

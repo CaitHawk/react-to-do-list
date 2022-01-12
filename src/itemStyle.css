@@ -22,6 +22,10 @@
   padding-left: 5px;
 }
 
+.itemTask li:hover {
+  cursor: pointer;
+}
+
 .editForm {
   display: flex;
   justify-content: center;

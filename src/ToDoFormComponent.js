@@ -24,7 +24,7 @@ class ToDoForm extends Component {
     }
     render() {
         return (
-            <form onSubmit={this.handleSubmit} className="newTaskForm">
+            <form onSubmit={this.handleSubmit} className="newTaskForm" autoComplete='off'>
                 {/* <label htmlFor='newItem'>New Todo:</label> */}
                 <input
                     type='text'

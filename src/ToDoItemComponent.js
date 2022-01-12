@@ -5,7 +5,7 @@ class ToDoItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isEditing: false,
+            edit: false,
             task: this.props.task
         }
         this.handleRemove = this.handleRemove.bind(this);
@@ -18,12 +18,12 @@ class ToDoItem extends Component {
         this.props.remove(this.props.id);
     };
     toggleForm() {
-        this.setState({ isEditing: !this.state.isEditing })
+        this.setState({ edit: !this.state.edit })
     };
     handleEdit(evt) {
         evt.preventDefault();
         this.props.edit(this.props.id, this.state.task)
-        this.setState({ isEditing: false })
+        this.setState({ edit: false })
     };
     handleChange(evt) {
         this.setState({
@@ -35,7 +35,7 @@ class ToDoItem extends Component {
     }
     render() {
         let result;
-        if (this.state.isEditing) {
+        if (this.state.edit) {
             result = (
                 <div>
                     <form onSubmit={this.handleEdit} className='editForm'>
